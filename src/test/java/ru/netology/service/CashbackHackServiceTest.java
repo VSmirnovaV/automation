@@ -12,7 +12,7 @@ public class CashbackHackServiceTest {
 
         int actual = service.remain(900);
         int expected = 100;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
 
@@ -22,7 +22,7 @@ public class CashbackHackServiceTest {
 
         int actual = service.remain(1000);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
 
@@ -32,7 +32,7 @@ public class CashbackHackServiceTest {
 
         int actual = service.remain(1);
         int expected = 999;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
 
@@ -42,25 +42,27 @@ public class CashbackHackServiceTest {
 
         int actual = service.remain(0);
         int expected = 1000;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
+
     @Test
     public void shouldBeCalculateTheAmountWhenBuying1001() {
         CashbackHackService service = new CashbackHackService();
 
         int actual = service.remain(1001);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
+
     @org.junit.jupiter.api.Test
     public void shouldBeCalculateBoundaryLess1000Api() {
         CashbackHackService service = new CashbackHackService();
 
         int actual = service.remain(900);
         int expected = 100;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
 
@@ -70,7 +72,7 @@ public class CashbackHackServiceTest {
 
         int actual = service.remain(1000);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
 
@@ -80,7 +82,7 @@ public class CashbackHackServiceTest {
 
         int actual = service.remain(1);
         int expected = 999;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
 
@@ -90,16 +92,17 @@ public class CashbackHackServiceTest {
 
         int actual = service.remain(0);
         int expected = 1000;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
+
     @org.junit.jupiter.api.Test
     public void shouldBeCalculateTheAmountWhenBuying1001Api() {
         CashbackHackService service = new CashbackHackService();
 
         int actual = service.remain(1001);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
 }
